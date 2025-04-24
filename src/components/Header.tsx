@@ -13,8 +13,8 @@ const Header = () => {
             <Link to="/" className="text-sm font-medium transition-colors hover:text-primary">
               Главная
             </Link>
-            <Link to="#scooters" className="text-sm font-medium transition-colors hover:text-primary">
-              Самокаты
+            <Link to="/rental" className="text-sm font-medium transition-colors hover:text-primary">
+              Аренда
             </Link>
             <Link to="#how-it-works" className="text-sm font-medium transition-colors hover:text-primary">
               Как это работает
@@ -28,7 +28,7 @@ const Header = () => {
           <Button variant="ghost" className="hidden md:flex">
             Войти
           </Button>
-          <Button>Арендовать сейчас</Button>
+          <Button as={Link} to="/rental">Арендовать сейчас</Button>
         </div>
       </div>
     </header>
